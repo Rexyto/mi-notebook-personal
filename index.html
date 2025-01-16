@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Notebook Personal</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="titlebar">
+    <div class="titlebar-text">Mi Notebook Personal</div>
+    <div class="titlebar-controls">
+      <button id="minimize-btn" title="Minimizar"><i class="fas fa-minus"></i></button>
+      <button id="maximize-btn" title="Maximizar"><i class="fas fa-square"></i></button>
+      <button id="close-btn" title="Cerrar"><i class="fas fa-times"></i></button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <button id="nueva-nota" class="new-note-btn">
+          <i class="fas fa-plus"></i>
+          Nueva Nota
+        </button>
+        <button id="borrar-nota" class="delete-note-btn" disabled title="Borrar nota">
+          <i class="fas fa-trash"></i>
+        </button>
+      </div>
+      
+      <div class="search-container">
+        <input type="text" id="buscar" placeholder="Buscar notas..." class="search-input">
+      </div>
+
+      <div id="lista-notas" class="notes-list"></div>
+    </div>
+
+    <div class="editor">
+      <div class="editor-header">
+        <input type="text" id="titulo" placeholder="Título" class="title-input">
+      </div>
+
+      <div class="toolbar">
+        <button class="toolbar-btn" id="categoria-personal">
+          <i class="fas fa-user"></i>
+          Personal
+        </button>
+        <button class="toolbar-btn" id="categoria-trabajo">
+          <i class="fas fa-briefcase"></i>
+          Trabajo
+        </button>
+        <button class="toolbar-btn" id="categoria-ideas">
+          <i class="fas fa-lightbulb"></i>
+          Ideas
+        </button>
+        <span class="word-count">0 palabras</span>
+      </div>
+      
+      <textarea id="contenido" placeholder="Escribe tu nota aquí..." class="content-input"></textarea>
+      
+      <div class="editor-footer">
+        <div id="save-status" class="save-status">
+          <i class="fas fa-check"></i>
+          <span>Guardado</span>
+        </div>
+        <button id="guardar" class="save-btn">
+          <i class="fas fa-save"></i>
+          Guardar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
