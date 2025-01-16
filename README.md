@@ -20,7 +20,7 @@
 ---
 
 <p align="center">
-  <img src="https://media.discordapp.net/attachments/926560389406277632/1329538686555262998/piclumen-1737057106957.png?ex=678ab4e4&is=67896364&hm=8898dfdec53e25b1369fc2d42f2b00f1a401d711018145bf9c0bd225070b2200&=&format=webp&quality=lossless&width=1365&height=1365/800x400" alt="Vista previa de Mi Notebook Personal">
+
 </p>
 
 </div>
